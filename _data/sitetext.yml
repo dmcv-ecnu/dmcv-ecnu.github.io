@@ -1,0 +1,766 @@
+#
+# Work based on https://github.com/mmistakes/minimal-mistakes/blob/master/_data/ui-text.yml
+#
+# Configuration: Add to _config.yml
+# locale: "en-US"  [YOUR PREFERRED LOCALE]
+#
+# How to use:
+# {{ site.data.ui-text[site.locale].<var_name> | default: 'text' }}
+
+# English (default)
+# -----------------
+en: &DEFAULT_EN
+  header:
+    title: # Welcome to our DMCV!
+    text: Welcome to DMCV! # It's Nice To Meet You
+    button: Tell Me More
+    buttonlink: "#researches"
+
+  researches:
+    # title: "研究方向"
+    # text: "RESEARCHES"
+    title: "RESEARCHES"
+    text: ""
+    section: researches
+    list:
+      - title: "Low-level Vision"
+        desc: "Image Restoration (including JPEG, Blurring, SR, White Noise, Haze)"
+        icon: fas fa-low-vision #find more at https://fontawesome.com/icons
+      - title: "2D Perception"
+        desc: "Image/Video Understanding and Analysis (including Semantic Segmentation of Ultra-high Resolution Image, Cross-modality Person Re-Identification, Image/Video Anomaly Detection)"
+        icon: fas fa-images
+      - title: "3D Perception"
+        desc: "3D Point Cloud Analysis (including Shape Recognition, Semantic Segmentation of Indoor Scenes, Semantic Segmentation and Detection of Large-scale Point Cloud for Autonomous Driving)"
+        icon: fas fa-camera
+
+  # notices:
+  #    title: "公告"
+  #    text: "NOTICES"
+  #    section: notices
+  #    list_news: 
+  #     - title: "Welcome Dr. Tan Xin to join our team!"
+  #     - title: "Congratulations! 1 paper has been accepted by ICML 2022!"
+  #     - title: "Congratulations! 3 papers have been accepted by CVPR 2022!"
+  #     - title: "Congratulations! 2 papers have been accepted by AAAI 2022!"
+
+  timeline:
+    # title: "关于我们的故事"
+    # text: "ABOUT OUR STORY"
+    title: "NEWS"
+    text: ""
+    section: timeline
+    # left is the default
+    start_align: "left"
+    events:
+      # - title: "Start!"
+      #   year: "2021-4-9-1:01"
+      #   desc: "Your description here, **Markdown** is fully supported."
+      #   image: assets/img/timeline/4.jpg
+      #   alt:
+      #   # you can enforce the alignment
+      #   align: right
+      # - title: "Project Communication!"
+      #   year: "2023-2"
+      #   desc: "We have communicated the progress of Synthetic Evaluation and Early Warning Artificial Intelligence System for Geriatrics in Science and Technology Innovation 2030 "New Generation Artificial Intelligence" Major Projects with Institute of Automation Chinese Academy of Sciences and Beijing Friendship Hospital Capital Medical University in Beijing."
+      #   image: assets/img/timeline/mindspore.png
+      #   alt:
+      #   align: left
+      - title: "Project Communication!"
+        year: "2023-2"
+        desc: "We have communicated the progress of Synthetic Evaluation and Early Warning Artificial Intelligence System for Geriatrics in Science and Technology Innovation 2030 New Generation Artificial Intelligence Major Projects with Institute of Automation Chinese Academy of Sciences and Beijing Friendship Hospital Capital Medical University in Beijing."
+        image: assets/img/timeline/project_communication.png
+        alt:
+        # # you can enforce the alignment
+        align: left
+      - title: "Code Release!"
+        year: "2022-9"
+        desc: "We have released a total of 13 MindSpore codes, including few-shot learning, Person ReID, 3D segmentation. All of these codes are hoped to be helpful for your research."
+        image: assets/img/timeline/mindspore.png
+        url: https://github.com/dmcv-ecnu/MindSpore_ModelZoo
+        alt:
+        # # you can enforce the alignment
+        align: right
+      - title: "Paper Accept!"
+        year: "2022-8"
+        desc: "Congratulations! 1 paper has been accepted by TPAMI 2022!"
+        image: assets/img/timeline/TPAMI.png
+        alt:
+        # you can enforce the alignment
+        align: left
+      - title: "Paper Accept!"
+        year: "2022-7"
+        desc: "Congratulations! 3 papers have been accepted by ECCV 2022!"
+        image: assets/img/timeline/ECCV2022.png
+        alt:
+        # you can enforce the alignment
+        align: right
+      - title: "Paper Accept!"
+        year: "2022-6"
+        desc: "Congratulations! 7 papers have been accepted by ACM MM 2022!"
+        image: assets/img/timeline/ACM_MM2022.JPG
+        alt:
+        # you can enforce the alignment
+        align: left
+      - title: "Member Join!"
+        year: "2022-6"
+        desc: "Welcome Dr. Tan Xin to join our team!"
+        image: assets/img/team/tanxin.png
+        alt:
+        # you can enforce the alignment
+        align: right
+      - title: "Paper Accept!"
+        year: "2022-5"
+        desc: "Congratulations! 1 paper has been accepted by ICML 2022!"
+        image: assets/img/timeline/ICML2022.png
+        alt:
+        # you can enforce the alignment
+        align: left
+      - title: "Paper Accept!"
+        year: "2022-3"
+        desc: "Congratulations! 3 papers have been accepted by CVPR 2022!"
+        image: assets/img/timeline/CVPR2022.png
+        alt:
+        # you can enforce the alignment
+        align: right
+      - title: "Paper Accept!"
+        year: "2021-12"
+        desc: "Congratulations! 2 papers have been accepted by AAAI 2022!"
+        image: assets/img/timeline/AAAI2022.png
+        alt:
+        # you can enforce the alignment
+        align: left
+
+    end: "Be Part <br> of Our <br> Story!"
+      
+  papers:
+    #  title: "论著"
+    #  text: "PAPERS"
+     title: "PAPERS"
+     text: ""
+     section: papers
+#     list_news:
+#      - title: "Congratulations! 4 papers Have Been Accepted by IJCAI 2021!"
+#      - title: "Congratulations! 4 Papers Have Been Accepted by CVPR 2021!"
+     list_journal:
+      - title: "Lattice Network for Lightweight Image Restoration"
+        author: "Xiaotong Luo, Yanyun Qu*, Yuan Xie*, Yulun Zhang, Cuihua Li, Yun Fu"
+        publication: "IEEE Trans. on Pattern Analysis and Machine Intelligence (IEEE TPAMI), 2022"
+        url: https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9847064
+        image: assets/paper_image/Lattice_Network_for_Lightweight_Image_Restoration.png
+        image_height: 180
+        image_width: 350
+      - title: "Robust Kernelized Multi-View Self-Representation for Subspace Clustering"
+        author: "Yuan Xie, Jinyan Liu, Yanyun Qu, Dacheng Tao, Wensheng Zhang, Longquan Dai, Lizhuang Ma"
+        publication: "IEEE Trans. on Neural Networks and Learning Systems (IEEE TNNLS), 2020"
+        url: https://ieeexplore.ieee.org/document/9063658
+        image: assets\paper_image\Robust_Kernelized_Multi-View_Self-Representation_for_Subspace_Clustering.png
+        image_height: 280
+        image_width: 350
+      - title: "Joint Deep Multi-View Learning for Image Clustering"
+        author: "Yuan Xie, Bingqian Lin, Yanyun Qu, Cuihua Li, Wensheng Zhang, Lizhuang Ma, Yonggang Wen, Dacheng Tao"
+        publication: "IEEE Trans. on Knowledge and Data Engineering (IEEE TKDE), 2020"
+        url: https://ieeexplore.ieee.org/abstract/document/8999493
+        image: assets\paper_image\Joint_Deep_Multi-View_Learning_for_Image_Clustering.png
+        image_height: 200
+        image_width: 350
+      - title: "Learning to Align via Wasserstein for Person Re-Identification"
+        author: "Zhizhong Zhang*, Yuan Xie*, Yongqiang Tang, Wensheng Zhang, Qi Tian"
+        publication: "IEEE Trans. on Image Processing (IEEE TIP), 2020"
+        url: https://ieeexplore.ieee.org/document/9110779
+        image: assets/paper_image/Learning_to_Align_via_Wasserstein_for_Person_Re-Identification.png
+        image_height: 200
+        image_width: 350
+      - title: "Generalized Latent Multi-View Subspace Clustering"
+        author: "Changqing Zhang, Huazhu Fu, Qinghua Hu, Xiaochun Chao, Yuan Xie, Dacheng Tao, Dong Xu"
+        publication: "IEEE Trans. on Pattern Analysis and Machine Intelligence (IEEE TPAMI), 2020"
+        url: assets\paper\Generalized_Latent_Multi-View_Subspace_Clustering.pdf
+        image: assets\paper_image\Generalized_Latent_Multi-View_Subspace_Clustering_image.png
+        image_height: 200
+        image_width: 350
+      - title: "Hyper-Laplacian Regularized Multilinear Multiview Self-Representation for Clustering and Semisupervised Learning"
+        author: "Yuan Xie, Dacheng Tao, Yanyun Qu, Wensheng Zhang, Longquan Dai"
+        publication: "IEEE Trans. on Cybernetics, 2020"
+        url: https://ieeexplore.ieee.org/document/8476207
+        image: assets\paper_image\Hyper-Laplacian_Regularized_Multilinear_Multi-View_Self-Representation_for_Clustering_and_Semi-supervised_Learning.png
+        image_height: 200
+        image_width: 350
+      - title: "Effective Image Retrieval via Multilinear Multi-Index Fusion"
+        author: "Zhizhong Zhang*, Yuan Xie*, Wensheng Zhang, Qi Tian"
+        publication: "IEEE Trans. on Multimedia (IEEE TMM), 2019"
+        url: https://arxiv.org/pdf/1709.09304v1.pdf
+        image: assets/paper_image/Effective_Image_Retrieval_via_Multilinear_Multi-Index_Fusion.png
+        image_height: 200
+        image_width: 350
+      - title: "Tensor Multi-Elastic Kernel Self-Paced Learning for Time Series Clustering"
+        author: "Yongqiang Tang*, Yuan Xie*, Xuebing Yang, Jinghao Niu, Wensheng Zhang"
+        publication: "IEEE Trans. on Knowledge and Data Engineering (IEEE TKDE), 2019"
+        url: https://ieeexplore.ieee.org/document/8812928
+        image: assets\paper_image\Tensor_Multi-Elastic_Kernel_Self-Paced_Learning_for_Time_Series_Clustering.png
+        image_height: 200
+        image_width: 350
+      - title: "Colored Fused Filament Fabrication"
+        author: "Haichuan Song, Jonas Martinez, Pierre Bedell, Noemie Vennin, Sylvain Lefebvre"
+        publication: "ACM Transactions on Graphics (ACM TOG), 2019"
+        url: https://arxiv.org/pdf/1709.09689.pdf
+        image: assets\paper_image\Colored_Fused_Filament_Fabrication.png
+        image_height: 175
+        image_width: 350
+      - title: "Tensor Multi-task Learning for Person Re-identification"
+        author: "Zhizhong Zhang*, Yuan Xie*, Yongqiang Tang, Wensheng Zhang, Qi Tian"
+        publication: "IEEE Trans. on Image Processing (IEEE TIP), 2019"
+        url: https://ieeexplore.ieee.org/abstract/document/8889995
+        image: assets\paper_image\Tensor_Multi-task_Learning_for_Person_Re-identification.png
+        image_height: 200
+        image_width: 350
+      - title: "Interpreting and Extending the Guided Filter via Cyclic Coordinate Descent"
+        author: "Longquan Dai, Mengke Yuan, Liang Tang,Yuan Xie, Xiaopeng Zhang, Jinghui Tang"
+        publication: "IEEE Trans. on Image Processing (IEEE TIP), 2019"
+        url: https://ieeexplore.ieee.org/document/8464080
+        image: assets\paper_image\Interpreting_and_Extending_the_Guided_Filter_via_Cyclic_Coordinate_Descent.png
+        image_height: 350
+        image_width: 350
+      - title: "On Unifying Multi-View Self-Representation for Clustering by Tensor Multi-Rank Minimization"
+        author: "Yuan Xie, Dacheng Tao, Wensheng Zhang, Yan Liu, Lei Zhang, Yanyun Qu"
+        publication: "International Journal of Computer Vision (IJCV), 2018"
+        url: assets\paper\On_Unifying_Multi-View_Self-Representations_for_Clustering_by_Tensor.pdf
+        image: assets\paper_image\On_Unifying_Multi-View_Self-Representations_for_Clustering_by_Tensor_image.png
+        image_height: 200
+        image_width: 350
+      # - title: "Removing Turbulence Effect via Hybrid Total Variation and Deformation-Guided Kernel Regression"
+      #   author: "Yuan Xie, Wensheng Zhang, Dacheng Tao, Wenrui Hu, Yanyun Qu, Hanzi Wang"
+      #   publication: "IEEE Trans. on Image Processing (IEEE TIP), 2016"
+      # - title: "Weighted Schatten p-Norm Minimization for Image Denoising and Background Subtraction"
+      #   author: "Yuan Xie, Shuhang Gu, Yan Liu, Wangmeng Zuo, Wensheng Zhang, Lei Zhang"
+      #   publication: "IEEE Trans. on Image Processing (IEEE TIP), 2016"
+      # - title: "Hyperspectral Image Restoration via Iteratively Regularized Weighted Schatten p-Norm Minimization"
+      #   author: "Yuan Xie, Yanyun Qu, Dacheng Tao, Weiwei Wu, Qiangqiang Yuan, Wensheng Zhang"
+      #   publication: "IEEE Trans. on Geoscience and Remote Sensing, 2016"
+      # - title: "Discriminative Object Tracking via Sparse Representation and Online Dictionary Learning"
+      #   author: "Yuan Xie, Wensheng Zhang, Cuihua Li, Shuyang Lin, Yanyun Qu, Yinghua Zhang"
+      #   publication: "IEEE Trans. on Cybernetics, 2014"
+      # - title: "Discriminative Subspace Learning with Sparse Representation View-based Model for Robust Visual Tracking"
+      #   author: "Yuan Xie, Wensheng Zhang, Yanyun Qu, Yinghua Zhang"
+      #   publication: "Pattern Recognition, 2014"
+      # - title: "Online Multiple Instance Gradient Feature Selection for Robust Visual Tracking"
+      #   author: "Yuan Xie, Yanyun Qu, Cuihua Li, Wensheng Zhang"
+      #   publication: "Pattern Recognition Letter, 2012"
+      # - title: "The Twist Tensor Nuclear Norm for Video Completion"
+      #   author: "Wenrui Hu, Dacheng Tao, Wensheng Zhang,Yuan Xie, Yehui Yang"
+      #   publication: "IEEE Trans. on Neural Networks and Learning Systems (IEEE TNNLS), 2016"
+      # - title: "Joint Hierarchical Category Structure Learning and Large-Scale Image Classification"
+      #   author: "Yanyun Qu, Li Lin, Fumin Shen, Chang Lu, Yang Wu,Yuan Xie, Dacheng Tao"
+      #   publication: "IEEE Trans. on Image Processing (IEEE TIP), 2017"
+      # - title: "Temporal Restricted Visual Tracking via Reverse-Low-Rank Sparse Learning"
+      #   author: "Yehui Yang, Wenrui Hu,Yuan Xie, Wensheng Zhang, Tianzhu Zhang"
+      #   publication: "IEEE Trans. on Cybernetics, 2017"
+      # - title: "Discriminative Reverse Sparse Tracking via Weighted Multi-Task Learning"
+      #   author: "Yehui Yang, Wenrui Hu, Wensheng Zhang, Tianzhu Zhang,Yuan Xie"
+      #   publication: "IEEE Trans. on Circuits and Systems for Video Technology, 2016"
+      # - title: "Global Coupled Learning and Local Consistencies Ensuring for Sparse-based Tracking"
+      #   author: "Yehui Yang,Yuan Xie, Wensheng Zhang, Wenrui Hu, Yuanhua Tan"
+      #   publication: "Neurocomputing, 2015"
+      # - title: "A TV-RC based Nonrigid Image Registration by Combining Parametric and Non-Parametric Transformation"
+      #   author: "Wenrui Hu,Yuan Xie, Lin Li, Wensheng Zhang"
+      #   publication: "Neurocomputing, 2014"
+      # - title: "Single Image Super-Resolution using Combined Total Variation Regularization by Split Bregman Iteration"
+      #   author: "Lin Li,Yuan Xie, Wenrui Hu, Wensheng Zhang"
+      #   publication: "Neurocomputing, 2014"
+      # - title: "Image Automatic Annotation via Multi-View Deep Representation"
+      #   author: "Yang Yang, Wensheng Zhang,Yuan Xie"
+      #   publication: "Journal of Visual Communication and Image Representation, 2014"
+      # - title: "Improved Heuristic Equivalent Search Algorithm based on Maximal Information Coefficient for Bayesian Network Structure Learning"
+      #   author: "Yinghua Zhang, Wensheng Zhang,Yuan Xie"
+      #   publication: "Neurocomputing, 2013"
+      # - title: "Learning Local Gaussian Process Regression for Image Super-Resolution"
+      #   author: "Jianming Li, Yanyun Qu, Cuihua Li,Yuan Xie, Yang Wu, Jianping Fan"
+      #   publication: "Neurocomputing, 2015"  
+      # - title: "Image Super-Resolution based on Multi-Kernel Regression"
+      #   author: "Jianming Li, Yanyun Qu, Cuihua Li,Yuan Xie"
+      #   publication: "Multimedia Tools and Application, 2016" 
+
+     
+     list_conference:
+      - title: "Optimization over Disentangled Encoding: Unsupervised Cross-Domain Point Cloud Completion via Occlusion Factor Manipulation"
+        author: "Jingyu Gong, Fengqi Liu, Jiachen Xu, Min Wang, Xin Tan, Zhizhong Zhang, Ran Yi, Haichuan Song, Yuan Xie*, Lizhuang Ma*"
+        publication: "ECCV, 2022"
+        url: https://www.ecva.net/papers/eccv_2022/papers_ECCV/html/361_ECCV_2022_paper.php
+        image: assets/paper_image/Optimization_over_Disentangled_Encoding.png
+        image_height: 200
+        image_width: 350
+        new: True
+      - title: "Optimal Transport for Label-Efficient Visiable-Infrared Person Re-Identification"
+        author: "Jiangming Wang, Zhizhong Zhang*, Mingang Chen, Yi Zhang, Cong Wang, Bin Sheng, Yanyun Qu, Yuan Xie"
+        publication: "ECCV, 2022"
+        url: https://www.ecva.net/papers/eccv_2022/papers_ECCV/html/971_ECCV_2022_paper.php
+        image: assets/paper_image/Optimal_Transport_for_Label-Efficient_Visible-Infrared_Person_Re-Identification.png
+        image_height: 200
+        image_width: 350
+        new: True
+      - title: "Mutually Reinforcing Structure with Proposal Contrastive Consistency for Few-Shot Object Detection"
+        author: "TianXue Ma, Mingwei Bi, Jian Zhang, Wang Yuan, Zhizhong Zhang*, Yuan Xie, Shouhong Ding, Lizhuang Ma"
+        publication: "ECCV, 2022"
+        url: https://www.ecva.net/papers/eccv_2022/papers_ECCV/html/5518_ECCV_2022_paper.php
+        image: assets/paper_image/Mutually_Reinforcing_Structure_with_Proposal_Contrastive_Consistency_for_Few-Shot_Object_Detection.png
+        image_height: 200
+        image_width: 350
+        new: True
+      - title: "Self-supervised Exclusive Learning for 3D Segmentation with Cross-Modal Unsupervised Domain Adaptation"
+        author: "Yachao Zhang, Miaoyu Li, Yuan Xie*, Cuihua Li, Cong Wang, Zhizhong Zhang, Yanyun Qu*"
+        publication: "ACM MM, 2022"
+        url: https://dl.acm.org/doi/pdf/10.1145/3503161.3547987
+        image: assets/paper_image/Self-supervised_Exclusive_Learning_for_3D_Segmentation_with_Cross-modal_Unsupervised_Domain_Adaptation.png
+        image_height: 200
+        image_width: 350
+        new: True
+      - title: "Hierarchical Walking Transformer for Object Re-Identification"
+        author: "Xudong Tian, Jun Liu, Zhizhong Zhang*, Chengjie Wang, Yanyun Qu, Yuan Xie, Lizhuang Ma"
+        publication: "ACM MM, 2022"
+        url: https://dl.acm.org/doi/pdf/10.1145/3503161.3548401
+        image: assets/paper_image/Hierarchical_Walking_Transformer_for_Object_Re-Identification.png
+        image_height: 260
+        image_width: 350
+        new: True
+      - title: "Adjustable Memory-efficient Image Super-resolution via Individual Kernel Sparsity"
+        author: "Xiaotong Luo, Mingliang Dai, Yulun Zhang, Yuan Xie*, Ding Liu, Yanyun Qu*, Yun Fu, Junping Zhang"
+        publication: "ACM MM, 2022"
+        url: https://dl.acm.org/doi/pdf/10.1145/3503161.3547768
+        image: assets/paper_image/Adjustable_Memory-efficient_Image_Super-resolution_via_Individual_Kernel_Sparsity.png
+        image_height: 280
+        image_width: 350
+        new: True  
+      - title: "Global Meets Local: Effective Multi-Label Image Classification via Category-Aware Weak Supervision"
+        author: "Jiawei Zhan, Jun Liu, Wei Tang, Guannan Jiang, Xi Wang, Bin-Bin Gao, Tianliang Zhang, Wenlong Wu, Wei Zhang, Chengjie Wang*, Yuan Xie*"
+        publication: "ACM MM, 2022"
+        url: https://dl.acm.org/doi/pdf/10.1145/3503161.3547834
+        image: assets/paper_image/Global_Meets_Local.png
+        image_height: 200
+        image_width: 350
+        new: True 
+      - title: "Rethinking the Metric in Few-shot Learning: From an Adaptive Multi-Distance Perspective"
+        author: "Jinxiang Lai, Siqian Yang, Guannan Jiang, Xi Wang, Yuxi Li, Zihui Jia, Xiaochen Chen, Jun Liu, Bin-Bin Gao, Wei Zhang, Yuan Xie*, Chengjie Wang*"
+        publication: "ACM MM, 2022"
+        url: https://dl.acm.org/doi/pdf/10.1145/3503161.3547853
+        image: assets/paper_image/Rethinking_the_Metric_in_Few-shot_Learning.png
+        image_height: 360
+        image_width: 350
+        new: True 
+      - title: "Not All Pixels Are Matched: Dense Contrastive Learning for Cross-Modality Person Re-Identification"
+        author: "Hanzhe Sun, Jun Liu, Zhizhong Zhang, Chengjie Wang, Yanyun Qu, Yuan Xie*"
+        publication: "ACM MM, 2022"
+        url: https://dl.acm.org/doi/pdf/10.1145/3503161.3547970
+        image: assets/paper_image/Not_All_Pixels_Are_Matched.png
+        image_height: 200
+        image_width: 350
+        new: True
+      - title: "Cross-Domain and Cross-Modal Knowledge Distillation in Domain Adaptation for 3D Semantic Segmentation"
+        author: "Miaoyu Li, Yachao Zhang, Yuan Xie, Zuodong Gao, Cuihua Li, Zhizhong Zhang, Yanyun Qu*"
+        publication: "ACM MM, 2022"
+        url: https://dl.acm.org/doi/pdf/10.1145/3503161.3547990
+        image: assets/paper_image/Cross-Domain_and_Cross-Modal_Knowledge_Distillation_in_Domain_Adaptation_for_3D_Semantic_Segmentation.png
+        image_height: 200
+        image_width: 350
+        new: True
+      - title: "Self-supervised Models are Good Teaching Assistants for Vision Transformers"
+        author: "Haiyan Wu, Yuting Gao, Yinqi Zhang, Shaohui Lin*, Yuan Xie*, Xing Sun, Ke Li"
+        publication: "ICML, 2022"
+        url: https://openreview.net/pdf?id=AVPSfvFXqJy
+        image: assets\paper_image\Self-supervised_Models_are_Good_Teaching_Assistants_for_Vision_Transformers.png
+        image_height: 200
+        image_width: 350
+        new: True
+      - title: "En-Compactness: Self-Distillation Embedding & Contrastive Generation for Generalized Zero-Shot Learning"
+        author: "Xia Kong, Zuodong Gao, Xiaofan Li, Ming Hong, Jun Liu, Chengjie Wang, Yuan Xie*, Yanyun Qu*"
+        publication: "CVPR, 2022"
+        url: https://openaccess.thecvf.com/content/CVPR2022/papers/Kong_En-Compactness_Self-Distillation_Embedding__Contrastive_Generation_for_Generalized_Zero-Shot_Learning_CVPR_2022_paper.pdf
+        image: assets\paper_image\En-Compactness.png
+        image_height: 200
+        image_width: 350
+        new: True
+      - title: "Topology-Aware Point Cloud Completion by Localizing Aligned Keypoints"
+        author: "Junshu Tang, Zhijun Gong, Ran Yi, Yuan Xie, Lizhuang Ma"
+        publication: "CVPR, 2022"
+        url: https://arxiv.org/pdf/2203.16771.pdf
+        image: assets\paper_image\Topology-Aware_Point_Cloud_Completion_by_Localizing_Aligned_Keypoints.png
+        image_height: 280
+        image_width: 350
+        new: True
+      - title: "HybridCR: Weakly-Supervised 3D Point Cloud Semantic Segmentation via Hybrid Contrastive Regularization"
+        author: "Mengtian Li, Yuan Xie, Yunhang Shen, Bo Ke, Ruizhi Qiao, Bo Ren, Shaohui Lin, Lizhuang Ma"
+        publication: "CVPR, 2022"
+        url: https://openaccess.thecvf.com/content/CVPR2022/papers/Li_HybridCR_Weakly-Supervised_3D_Point_Cloud_Semantic_Segmentation_via_Hybrid_Contrastive_CVPR_2022_paper.pdf
+        image: assets\paper_image\HybridCR.png
+        image_height: 280
+        image_width: 350
+        new: True
+      - title: "Task-level Self-supervision for Cross-domain Few-shot Learning"
+        author: "Wang Yuan#, Zhizhong Zhang#, Cong Wang, Haichuan Song, Yuan Xie*, Lizhuang Ma*"
+        publication: "AAAI, 2022"
+        url: https://www.aaai.org/AAAI22Papers/AAAI-335.YuanW.pdf
+        image: assets\paper_image\Task-level_Self-supervision_for_Cross-domain_Few-shot_Learning.png
+        image_height: 200
+        image_width: 350
+        new: True
+      - title: "Comprehensive Regularization in a Bi-directional Predictive Network for Video Anomaly Detection"
+        author: "Chengwei Chen, Yuan Xie*, Shaohui Lin, Angela Yao, Guannan Jiang, Wei Zhang, Yanyun Qu, Ruizhi Qiao, Bo Ren, Lizhuang Ma*"
+        publication: "AAAI, 2022"
+        url: https://www.aaai.org/AAAI22Papers/AAAI-470.ChenC.pdf
+        image: assets\paper_image\Comprehensive_Regularization_in_a_Bi-directional_Predictive_Network_for_Video_Anomaly_Detection.png
+        image_height: 200
+        image_width: 350
+        new: True
+      # - title: "Exploring Versatile Prior for Human Motion via Motion Frequency Guidance"
+      #   author: "Jiachen Xu, Min Wang, Jingyu Gong, Wentao Liu, Chen Qian, Yuan Xie*, Lizhuang Ma*"
+      #   publication: "3DV, 2021"
+      # - title: "Perturbed Self-Distillation: Wealy Supervised Large-Scale Point Cloud Semantic Segmentation"
+      #   author: "Yachao Zhang, Yanyun Qu*, Yuan Xie*, Zonghao Li, Shanshan Zheng, Cuihua Li"
+      #   publication: "ICCV, 2021"
+      # - title: "Faster-PPN: Towards Real-Time Semantic Segmentation with Dual Mutual Learning for Ultra-High Resolution Images"
+      #   author: "Bicheng Dai, Kaisheng Wu, Tong Wu, Kai Li, Yanyun Qu*, Yuan Xie*, Yun Fu*"
+      #   publication: "ACM MM, 2021"
+      # - title: "Novelty Detection via Contrastive Learning with Negative Data Augmentation"
+      #   author: "Chengwei Chen, Shaohui Lin, Xin Tan, Ruizhi Qiao, Jian Zhou, Yi Zhang, Yuan Xie*, Lizhuang Ma*"
+      #   publication: "IJCAI, 2021"
+      # - title: "Dual Reweighting Domain Generalization for Face Presentation Attack Detection"
+      #   author: "Shubao Liu#, Keyue Zhang#, Kekai Zhang, Shuohong Ding*, Ying Tai, Jilin Li, Yuan Xie, Lizhuang Ma"
+      #   publication: "IJCAI, 2021"
+      # - title: "Learn from Concepts: Towards the Purified Memory for Few-Shot Learning"
+      #   author: "Xuncheng Liu#, Xudong Tian#, Shaohui Lin, Yanyun Qu, Wang Yuan, Zhizhong Zhang*, Yuan Xie*, Lizhuang Ma"
+      #   publication: "IJCAI, 2021"
+      # - title: "Towards Compact Single Image Super-Resolution via Contrastive Self-distillation"
+      #   author: "Yanbo Wang, Shaohui Lin*, Yanyun Qu, Haiyan Wu, Zhizhong Zhang, Yuan Xie*, Angela Yao"
+      #   publication: "IJCAI, 2021"
+      # - title: "Farewell to Mutual Information: Variational Distillation for Cross-Modal Person Re-Identification"
+      #   author: "Xudong Tian, Zhizhong Zhang*, Shaohui Lin, Yanyun Qu, Yuan Xie*, Lizhuang Ma"
+      #   publication: "CVPR, 2021(Oral)"
+      # - title: "Contrastive Learning for Compact Single Image Dehazing"
+      #   author: "Haiyan Wu, Yanyun Qu, Jian Zhou, Ruizhi Qiao, Shaohui Lin*, Zhizhong Zhang, Yuan Xie*, Lizhuang Ma"
+      #   publication: "CVPR, 2021"
+      # - title: "Omni-supervised Point Cloud Segmentation via Gradual Receptive Field Component Reasoning"
+      #   author: "Jingyu Gong, Jiachen Xu, Xin Tan, Perez Li, Haichuan Song, Yanyun Qu, Yuan Xie*, Lizhuang Ma*"
+      #   publication: "CVPR, 2021"
+      # - title: "Discrete-continuous Action Space Policy Gradient-based Attention for Image-Text Matching"
+      #   author: "Shiyang Yan, Li Yu, Yuan Xie*"
+      #   publication: "CVPR, 2021"
+      # - title: "Boundary-Aware Geometric Encoding for Semantic Segmentation of Point Clouds"
+      #   author: "Jingyu Gong, Jiachen Xu, Xin Tan, Jie Zhou, Yanyun Qu, Yuan Xie*, Lizhuang Ma"
+      #   publication: "AAAI, 2021"
+      # - title: "Weakly Supervised Semantic Segmentation for Large-Scale Point Cloud"
+      #   author: "Yachao Zhang, Zonghao Li, Yuan Xie*, Yanyun Qu, Cuihua Li, Tao Mei"
+      #   publication: "AAAI, 2021"
+      # - title: "LatticeNet: Towards Lightweight Image Super-resolution with Lattice Block"
+      #   author: "Xiaotong Luo*, Yuan Xie*, Yulun Zhang, Yanyun Qu, Cuihua Li, Yun Fu"
+      #   publication: "ECCV, 2020"
+      # - title: "Latent Regularized Generative Dual Adversarial Network for Abnormal Detection"
+      #   author: "Chengwei Chen, Jing Liu, Yuan Xie*, Yinxiao Ban, Chunyun Wu, Yiqing Tao, Haichuan Song"
+      #   publication: "IJCAI, 2020"
+      # - title: "Meta Segmentation Network for Ultra-Resolution Medical Image"
+      #   author: "Tong Wu, Bicheng Dai, Shuxing Chen, Yanyun Qu, Yuan Xie*"
+      #   publication: "IJCAI, 2020"
+      # - title: "SceneEncoder: Scene-Aware Semantic Segmentation of Point Clouds with Learnable Scene Descriptor"
+      #   author: "Jiacheng Xu, Jingyu Gong, Jie Zhou, Xin Tan, Yuan Xie*, Lizhuang Ma*"
+      #   publication: "IJCAI, 2020"
+      # - title: "Distill Image Dehazing with Heterogeneous Task Imitation"
+      #   author: "Ming Hong* , Yuan Xie* , Cuihua Li, Yanyun Qu"
+      #   publication: "CVPR, 2020"
+      # - title: "Hierarchical Knowledge Squeezed Adversarial Network Compression"
+      #   author: "Peng Li, Changyong Shu, Yuan Xie* , Yanyun Qu, Hui Kong"
+      #   publication: "AAAI, 2020"
+      # - title: "Patch Proposal Network for Fast Semantic Segmentation of High-Resolution Images"
+      #   author: "Tong Wu, Zhenzhen Lei, Bingqian Lin, Cuihua Li, Yanyun Qu, Yuan Xie*"
+      #   publication: "AAAI, 2020"
+      # - title: "Enhanced Pix2pix Dehazing Network"
+      #   author: "Yanyun Qu, Yizi Chen, Jingying Huang, Yuan Xie*"
+      #   publication: "CVPR, 2019"
+      # - title: "Joint-Attention Discriminator for Accurate Super-Resolution via Adversarial Training"
+      #   author: "Rong Chen*, Yuan Xie*, Xiaotong Luo, Yanyun Qu, Cuihua Li"
+      #   publication: "ACM MM, 2019"
+      # - title: "Designing by Training: Acceleration Neural Network for Fast High-Dimensional Convolution"
+      #   author: "Longquan Dai, Liang Tang,Yuan Xie, Jinghui Tang"
+      #   publication: "NIPS, 2018"
+      # - title: "Bi-GANs-ST for Perceptual Image Super-Resolution"
+      #   author: "Xiaotong Luo, Rong Chen,Yuan Xie, Yanyun Qu, Cuihua Li"
+      #   publication: "ECCVW, 2018"  
+      # - title: "Persistent Memory Residual Network for Single Image Super Resolution"
+      #   author: "Rong Chen, Yanyun Qu, Cuihua Li,Yuan Xie"
+      #   publication: "CVPRW, 2018"
+      # - title: "Linear Approximation of Mean Curvature"
+      #   author: "Yuanhao Gong,Yuan Xie"
+      #   publication: "ICIP, 2017"
+      # - title: "Image Super Resolution using Deep Belief Networks"
+      #   author: "Yanwen Zhou, Yanyun Qu,Yuan Xie, Wensheng Zhang"
+      #   publication: "ICIMCS, 2014"
+      # - title: "Automatic Online Labeling Images via Co-active Learning"
+      #   author: "Yanyun Qu, Lifeng Liu,Yuan Xie, Zejian Yuan"
+      #   publication: "ICIMCS, 2009"
+      # - title: "Unifying Visual Saliency with HOG Feature Learning for Traffic Sign Detection"
+      #   author: "Yuan Xie, Lifeng Liu, Cuihua Li, Yanyun Qu"
+      #   publication: "IEEE IV, 2009"
+
+  news:
+    # title: "新闻"
+    # text: "NEWS"
+    title: "ACHIEVEMENTS"
+    text: ""
+    section: news
+    closebutton: "Close Project"
+
+  about:
+    title: "About Us"
+    text: "our story"
+    section: about
+
+  clients:
+    section: clients
+    max-height: 100px
+    horizontal-scrolling: "" #"yes/no"
+    list:
+      # - title: "envato"
+      #   url: https://github.com/raviriley/agency-jekyll-theme
+      #   logo: assets/img/clients/envato.jpg
+      # - title: "designmodo"
+      #   url: https://github.com/raviriley/agency-jekyll-theme
+      #   logo: assets/img/clients/designmodo.jpg
+      # - title: "themeforest"
+      #   url: https://github.com/raviriley/agency-jekyll-theme
+      #   logo: assets/img/clients/themeforest.jpg
+      # - title: "Creative Market"
+      #   url: https://github.com/raviriley/agency-jekyll-theme
+      #   logo: assets/img/clients/creative-market.jpg
+
+  team:
+    # title: "团队成员"
+    # text: "TEAM MEMBERS"
+    title: "TEAM MEMBERS"
+    text: ""
+    # subtext: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde. **Markdown** supported.
+    section: team
+    people:
+      - name: "张志忠"
+        role: "副研究员"
+        image: assets/img/team/zhangzhizhong.png
+        social:
+          - url: https://twitter.com
+            icon: fab fa-twitter
+          - url: https://facebook.com
+            icon: fab fa-facebook-f
+          - url: https://linkedin.com
+            icon: fab fa-linkedin-in
+          - url: https://www.qq.com/
+            icon: fab fa-qq
+      - name: "谢源"
+        role: "教授/博导"
+        image: assets/img/team/xieyuan.png
+        social:
+          - url: https://twitter.com
+            icon: fab fa-twitter #find more at https://fontawesome.com/icons
+          - url: https://facebook.com
+            icon: fab fa-facebook-f
+          - url: https://linkedin.com
+            icon: fab fa-linkedin-in
+          - url: https://www.qq.com/
+            icon: fab fa-qq
+      - name: "谭鑫"
+        role: "副研究员"
+        image: assets/img/team/tanxin.png
+        social:
+          - url: https://twitter.com
+            icon: fab fa-twitter
+          - url: https://facebook.com
+            icon: fab fa-facebook-f
+          - url: https://linkedin.com
+            icon: fab fa-linkedin-in
+          - url: https://www.qq.com/
+            icon: fab fa-qq
+
+  contact:
+    # title: "联系我们"
+    # text: "CONTACT US"
+    title: "CONTACT US"
+    text: ""
+    section: contact
+    name: "Name*"
+    name-validation: "Please enter your name."
+    email: "Email*"
+    email-validation: "Please enter your email address."
+    phone: "Phone Number"
+    phone-validation: "Please enter your phone number."
+    message: "Message*"
+    message-validation: "Please enter a message."
+    subject: "Contact Form Submission"
+    submit: "Send Message"
+
+  footer:
+    legal: "Privacy Policy"
+    social:
+      - url: https://twitter.com
+        icon: "fab fa-twitter"
+      - url: https://facebook.com
+        icon: "fab fa-facebook-f"
+      - url: https://linkedin.com
+        icon: "fab fa-linkedin-in"
+      - url: https://github.com/raviriley/agency-jekyll-theme
+        icon: "fab fa-github"
+      - url: https://instagram.com
+        icon: "fab fa-instagram"
+en-US:
+  <<: *DEFAULT_EN
+en-CA:
+  <<: *DEFAULT_EN
+en-GB:
+  <<: *DEFAULT_EN
+en-AU:
+  <<: *DEFAULT_EN
+
+# Spanish
+# -------
+# es: &DEFAULT_ES
+#   header:
+#     title: ¡Bienvenido a nuestro Estudio!
+#     text: Es un placer conocerle
+#     button: Ver más
+#     buttonlink: "#servicios"
+
+#   services:
+#     title: "Servicios"
+#     text: "Lorem ipsum"
+#     section: servicios
+#     list:
+#       - title: "Comercio Electrónico"
+#         desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+#         icon: fas fa-shopping-cart #find more at https://fontawesome.com/icons
+#       - title: "Diseño Responsivo"
+#         desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+#         icon: fas fa-laptop
+#       - title: "[Markdown](https://en.wikipedia.org/wiki/Markdown)"
+#         desc: "Su descripción aquí, soporte completo de **Markdown**"
+#         icon: fab fa-markdown
+
+#   portfolio:
+#     title: "Portafolio"
+#     text: "Lorem ipsum dolor sit amet consectetur."
+#     section: portafolio
+#     closebutton: "Cerrar Proyecto"
+
+#   timeline:
+#     title: "Cronología"
+#     text: "Lorem ipsum timeline"
+#     section: cronologia
+#     # left is the default
+#     #start_align: "left"
+#     events:
+#       - title: "Nuestro Humilde Comienzo"
+#         year: "2009-2011"
+#         desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
+#         image: assets/img/timeline/1.jpg
+#         alt:
+#       - title: "Una Agencia nace"
+#         year: "March 2011"
+#         desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
+#         image: assets/img/timeline/2.jpg
+#         alt:
+#       - title: "La plantilla Jekyll es creada"
+#         year: "2019"
+#         desc: "Ravi Riley convirtió Agency, una plantilla basada en Bootstrap, en una plantilla de Jekyll. La plantilla Jekyll puede ser instalada commo una gema de Ruby (Ruby gem) o remotamente. Para más información, visite la documentación."
+#         image: assets/img/timeline/3.jpg
+#         alt: image alt text
+#       - title: "Título"
+#         year: "2009-2011"
+#         desc: "Su descripción aquí, **Markdown** es soportado completamente."
+#         image: assets/img/timeline/4.jpg
+#         alt:
+#         # you can enforce the alignment
+#         align: right
+#     end: "¡Se parte <br> de Nuestra <br> Historia!"
+
+#   about:
+#     title: "Sobre nosotros"
+#     text: "nuestra historia"
+#     section: nosotros
+
+#   clients:
+#     section: clientes
+#     max-height: 100px
+#     horizontal-scrolling: "" #"yes/no"
+#     list:
+#       - title: "envato"
+#         url: https://github.com/raviriley/agency-jekyll-theme
+#         logo: assets/img/clients/envato.jpg
+#       - title: "designmodo"
+#         url: https://github.com/raviriley/agency-jekyll-theme
+#         logo: assets/img/clients/designmodo.jpg
+#       - title: "themeforest"
+#         url: https://github.com/raviriley/agency-jekyll-theme
+#         logo: assets/img/clients/themeforest.jpg
+#       - title: "Creative Market"
+#         url: https://github.com/raviriley/agency-jekyll-theme
+#         logo: assets/img/clients/creative-market.jpg
+
+#   team:
+#     title: "NUESTRO INCREÍBLE EQUIPO"
+#     text: "Lorem ipsum dolor sit amet consectetur."
+#     subtext: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde. **Markdown** supported.
+#     section: equipo
+#     people:
+#       - name: "Kay Garland"
+#         role: "Lead Designer"
+#         image: assets/img/team/500x500.jpg
+#         social:
+#           - url: https://twitter.com
+#             icon: fab fa-twitter
+#           - url: https://facebook.com
+#             icon: fab fa-facebook-f
+#           - url: https://linkedin.com
+#             icon: fab fa-linkedin-in
+#       - name: "Larry Parker"
+#         role: "Lead Marketer"
+#         image: assets/img/team/2.jpg
+#         social:
+#           - url: https://twitter.com
+#             icon: fab fa-twitter
+#           - url: https://facebook.com
+#             icon: fab fa-facebook-f
+#           - url: https://linkedin.com
+#             icon: fab fa-linkedin-in
+#       - name: "Diana Perterson"
+#         role: "Lead Developer"
+#         image: assets/img/team/500x500.jpg
+#         social:
+#           - url: https://twitter.com
+#             icon: fab fa-twitter
+#           - url: https://facebook.com
+#             icon: fab fa-facebook-f
+#           - url: https://linkedin.com
+#             icon: fab fa-linkedin-in
+
+#   contact:
+#     title: "Contáctenos"
+#     text: "Lorem ipsum or call 123456789"
+#     section: contacto
+#     name: "Nombre*"
+#     name-validation: "Por favor ingrese su nombre."
+#     email: "Correo Electrónico*"
+#     email-validation: "Por favor ingrese su correo electrónico."
+#     phone: "Número Telefónico*"
+#     phone-validation: "Por favor ingrese su número telefónico."
+#     message: "Mensaje*"
+#     message-validation: "Por favor escriba un mensaje."
+#     subject: "Envío del formulario de contacto"
+#     submit: "Enviar Mensaje"
+
+#   footer:
+#     legal: "Política de Privacidad"
+#     social:
+#       - url: https://twitter.com
+#         icon: "fab fa-twitter"
+#       - url: https://facebook.com
+#         icon: "fab fa-facebook-f"
+#       - url: https://linkedin.com
+#         icon: "fab fa-linkedin-in"
+#       - url: https://github.com/raviriley/agency-jekyll-theme
+#         icon: "fab fa-github"
+#       - url: https://instagram.com
+#         icon: "fab fa-instagram"
+# es-ES:
+#   <<: *DEFAULT_ES
+# es-CO:
+#   <<: *DEFAULT_ES

@@ -1,0 +1,131 @@
+<!-- Papers -->
+<section class="page-section" id="{{ site.data.sitetext[site.locale].papers.section | default: "papers" }}">
+    <div class="container">
+	
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">{{ site.data.sitetext[site.locale].papers.title | default: "Papers" }}</h2>
+          {% if site.data.sitetext[site.locale].papers.text %}
+		  <h3 class="section-subheading text-muted">{{ site.data.sitetext[site.locale].papers.text }}</h3>
+		  {% endif %}
+        </div>
+      </div>
+     
+      
+      <!-- <hr/><h2><div class="section-heading text-uppercase"><font color="#FF0000"> {{ "News：" | markdownify }}</font></div></h2>
+      {% for papers in site.data.sitetext[site.locale].papers.list_news %}
+          <div class="item">
+            {% if papers.title %}
+	          <p align="left">
+                <font size="4"><b>{{ papers.title }}</b></font>
+            </p>
+      {% endif %}
+      </div>
+      {% endfor %} -->
+
+      <br><hr/><h2><div class="section-heading text-uppercase">{{ "RECENT REPRESENTATIVE TOP-LEVEL CONFERENCE PAPERS:" | markdownify }}</div></h2>
+      <!-- <h3 class="section-subheading text-muted">{{ "Recent Representative Top-level Conference Papers of the Team: " }}</h3> -->
+      {% for papers in site.data.sitetext[site.locale].papers.list_conference %}
+      <div class="container" display="inline-block" style="float:left;width:100%;margin-bottom:30px;">
+        <div class="container" style="float:left;width:70%;height:100%;">
+            {% if papers.title %}
+            <p align="left">
+                {% if papers.new %}
+                    <font style="font-family:Lucida Calligraphy"><font color="#FF0000"><font size="3"><b><sup>New</sup></b></font></font></font>
+                {% endif %}
+                <font size="4"><b>{{ papers.title }}</b></font>
+            </p>
+            {% endif %}
+            
+            {% if papers.author %}
+            <p align="left">
+                <i>{{ papers.author }}</i>
+            </p>
+            {% endif %}
+
+            {% if papers.publication %}
+            <p align="left">
+                <font color="#336199"><font size="3">{{ papers.publication }}</font></font>
+            </p>
+            {% endif %}
+
+            <p align="left">
+            {% if papers.url %}
+                <a href="{{ papers.url }}">[pdf]</a>
+            {% endif %}
+            {% if papers.code %}
+                <a href="{{ papers.code }}">[code]</a>
+            {% endif %}
+            </p>
+        </div>
+
+        <div class="container" style="float:left;width:30%;height:100%;">
+            {% if papers.image %}
+                {% if papers.image_height && papers.image_width %}
+                    <a href="#" class="image"><img height="{{ papers.image_height }}" width="{{ papers.image_width }}" src="{{ papers.image }}" alt="" style="filter:drop-shadow(10px 10px 10px rgba(0, 0, 0, .5))"/></a>
+                {% else %}
+                    <a href="#" class="image"><img height=200 width=300 src="{{ papers.image }}" alt="" style="filter:drop-shadow(10px 10px 10px rgba(0, 0, 0, .5))"/></a>
+                {% endif %}
+            {% endif %}
+        </div>
+      </div>       
+	  {% endfor %}
+
+      <div class="container" style="clear:both;"></div>
+	  
+      <hr/><h2><div class="section-heading text-uppercase">{{ "RECENT REPRESENTATIVE TOP-LEVEL JOURNAL PAPERS:" | markdownify }}</div></h2>
+      <!-- <h3 class="section-subheading text-muted">{{ "Recent Representative Top-level Journal Papers of the Team: " }}</h3> -->
+	  {% for papers in site.data.sitetext[site.locale].papers.list_journal %}
+      <div class="container" display="inline-block" style="float:left;width:100%;margin-bottom:30px;">
+        <div class="container" style="float:left;width:70%;height:100%;">
+            {% if papers.title %}
+            <p align="left">
+                {% if papers.new %}
+                    <font style="font-family:Lucida Calligraphy"><font color="#FF0000"><font size="3"><b><sup>New</sup></b></font></font></font>
+                {% endif %}
+                <font size="4"><b>{{ papers.title }}</b></font>
+            </p>
+            {% endif %}
+            
+            {% if papers.author %}
+            <p align="left">
+                <i>{{ papers.author }}</i>
+            </p>
+            {% endif %}
+
+            {% if papers.publication %}
+            <p align="left">
+                <font color="#336199"><font size="3">{{ papers.publication }}</font></font>
+            </p>
+            {% endif %}
+
+            <p align="left">
+            {% if papers.url %}
+                <!-- <font color="#336199"><font size="3"><a href="{{ papers.url }}">[pdf]</a></font></font> -->
+                <a href="{{ papers.url }}">[pdf]</a>
+            {% endif %}
+            {% if papers.code %}
+                <!-- <font color="#336199"><font size="3"><a href="{{ papers.code }}">[code]</a></font></font> -->
+                <a href="{{ papers.code }}">[code]</a>
+            {% endif %}
+            </p>
+        </div>
+        
+        <div class="container" style="float:left;width:30%;height:100%;">
+            {% if papers.image %}
+                {% if papers.image_height && papers.image_width %}
+                    <a href="#" class="image"><img height="{{ papers.image_height }}" width="{{ papers.image_width }}" src="{{ papers.image }}" alt="" style="filter:drop-shadow(10px 10px 10px rgba(0, 0, 0, .5))"/></a>
+                {% else %}
+                    <a href="#" class="image"><img height=200 width=300 src="{{ papers.image }}" alt="" style="filter:drop-shadow(10px 10px 10px rgba(0, 0, 0, .5))"/></a>
+                {% endif %}
+            {% endif %}
+        </div>
+      </div>
+	  {% endfor %}
+	  
+    </div>
+
+    <div class="container" style="clear:both;"></div>
+    <!-- important! -->
+</section>
+<!-- End Papers -->
